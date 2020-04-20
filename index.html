@@ -1,0 +1,2018 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentum D2 Platform</title>
+        <link rel="stylesheet" href= "style.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="LoginService.js"></script>
+        <script src="app.js"></script>
+		<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<title>D2 Training</title>
+</head>
+<body>
+
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#myPage">D2 Training</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#enduser">D2LS APPLICATIONS</a></li>
+						<li><a href="#developer">DEVELOPER WORSPACE</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">BEYOND D2
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#experience">EXPERIENCE</a></li>
+								<li><a href="#">DFC</a></li>
+								<li><a href="#">DQL</a></li>
+
+							</ul>
+						</li>
+						<li><a href="#contact">CONTACT US</a></li>
+						  <!-- <li><a href="logout.jsp".style.display='block'">LOGIN</a> </li> -->
+			<!--<a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>-->
+					</ul>
+				</div>
+            </div>
+        </nav>
+		<div class="jumbotron text-center">
+			<h1>Documentum D2</h1>
+			<p>Interactive Platform for all Documentum D2 Activities</p>
+	     <center><h3>
+					Welcome Team LTI
+			</h3></center>
+      <form>
+                <div class="input-group">
+                    <input type="Text" class="form-control" width="30" size="30 px" placeholder="Provide Email ID" required>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn pull-right">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+		</div>
+        <div id="about" class="container-fluid text-center bg-grey">
+			<h2>About Documentum D2</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active" style="border-color: black;"></li>
+					<li data-target="#myCarousel" data-slide-to="1" style="border-color: black;"></li>
+					<li data-target="#myCarousel" data-slide-to="2" style="border-color: black;"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h4><span><b>Documentum D2 consists of two components:</b>
+							<p>D2 Config</p>
+							<p>D2 Client</p></span>
+						</h4>
+					</div>
+					<div class="item">
+						<h4><b> D2 Configuration:</b>
+						<p>The web-based application, D2 Config, for administrators to use to configure settings</p><p>such as automated content-handling processes and background settings for D2 Client.</p>
+						</h4>
+					</div>
+					<div class="item">
+						<h4><span><b>D2 Client:</b>
+							<p>The web-based application - D2 Client,</p>
+							<p> for end users, that provides the ability to interact with content in one or more repositories.</p>
+							</span>
+						</h4>
+					</div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>D2 Client</h2><br>
+                    <h4 style="text-align: justify">The web-based application for users that provides the ability to interact with content in one or more repositories. You use D2 Client to configure a user interface that streamlines necessary content management processes. For example, an interface displays widgets for quality assurance activities. </h4>
+                    <p style="text-align: justify">Normally, this means someone drafting content would face difficulties trying to use an ill-suited user interface. D2 Client enables the drafter to create a workspace suited specifically for drafting containing only the information and widgets necessary to drafter-specific tasks.</p>
+                    <button class="btn pull-left" href="#developer">Get More Details Here!</button>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-lock logo slidelock"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-wrench logo slidewrench"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h2 style="text-align: justify">D2 Config</h2><br>
+                    <h4>The web-based application for users that provides the ability to interact with content in one or more repositories. You use D2 Client to configure a user interface that streamlines necessary content management processes. For example, an interface displays widgets for quality assurance activities. </h4>
+                    <p style="text-align: justify">Normally, this means someone drafting content would face difficulties trying to use an ill-suited user interface. D2 Client enables the drafter to create a workspace suited specifically for drafting containing only the information and widgets necessary to drafter-specific tasks.</p>
+                    <button class="btn pull-right" href="#developer">Get More Details Here!</button>
+                </div>
+            </div>
+            </div>
+        <!-- Container (USER WORKSPACE) -->
+        <div id="enduser" class="container-fluid">
+            <div class="text-center">
+                <h2>Documentum D2 For LifeSciences</h2>
+                <p>The EMC Documentum for Life Sciences solution suite provides purpose-built, regulated content management solutions to help life sciences organizations meet compliance requirements, increase productivity and securely collaborate across the extended enterprise. </p>
+                <h4>D2LS Suite offers four Applications</h4>
+            </div>
+            <div class="row slideanim">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Quality and Manufacturing</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>Predefined industry-standard data models, dictionaries, and taxonomies that enables Title 21 CFR PART 11 compliance including electronic signature capabilities</p>
+                            <p>Document overlays and watermarks tailored to business needs</p>
+                            <p>Enforced signatures in review and approval tasks ensures compliant policies and simplifies the document approval process</p>
+                            <p>Enforced business rules, such as rules for review and approval, periodic review, and training workflows</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><strong>Predefined Roles and Workspace for</strong></p>
+                            <h4>Administrators</h4>
+                            <h4>Authors and Coordinators</h4>
+                            <h4>Reviewers and Approvers</h4>
+                            <h4>Quality Approvers</h4>
+                            <h4>Readers and Auditors</h4>
+                            <button class="btn btn-lg">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Research and Development</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>Manage the creation, review and approval of regulatory submission documents</p>
+                            <p>Drug Information Associationâ€™s (DIA) Electronic Document Management (EDM) Reference Model Information architecture, including industry defined data model, dictionaries, and taxonomies</p>
+                            <p>Enables Title 21 CFR PART 11 compliance including electronic signature capabilities</p>
+                            <p>Flexible lifecycles and workflows with four levels of control mapped to DIA EDM reference model artifacts</p>
+                            <p></p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><strong>Predefined Roles and Workspace for</strong></p>
+                            <h4>Administrators</h4>
+                            <h4>Managers</h4>
+                            <h4>Authors and Coordinators</h4>
+                            <h4>Reviewers and Approvers</h4>
+                            <h4>Readers and Auditors</h4>
+                            <button class="btn btn-lg">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Submission, Store and View</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>Automatically store submission content within a secure Documentum life sciences repository to ensure compliance and ease accessibility</p>
+                            <p>Enables users to prepare their application dossier for submission to regulatory agencies, store the submitted content, and manage the lifecycle of regulatory content.</p>
+                            <p>Enables the storing and viewing of eCTDs in the repository, including all electronic table of contents, metadata, and hyperlinks</p>
+                            <p>Stores NeeS and paper submissions </p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><strong>Predefined Roles and Workspace for</strong></p>
+                            <h4>Administrators</h4>
+                            <h4>Managers</h4>
+                            <h4>Authors and Coordinators</h4>
+                            <h4>Reviewers and Approvers</h4>
+                            <h4>Readers and Regulatory Publishers</h4>
+                            <button class="btn btn-lg">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Electronic Trial Master File</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>Centralized global repository of documents related to a clinical study or trial</p>
+                            <p>Documents in the TMF provide supporting evidence, but they are not part of the regulatory submissions</p>
+                            <p>Address the challenge of capturing, collating, storing, securing, and retaining massive amounts of documents from clinical studies conducted at numerous sites and countries around the world.</p>
+                            <p>Predefined document taxonomy based on the DIA TMF Reference Model</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><strong>Predefined Roles and Workspace for</strong></p>
+                            <h4>Trial Managers</h4>
+                            <h4>Clinical Authors</h4>
+                            <h4>Trial Coordinators</h4>
+                            <h4>Inspectors</h4>
+                            <h4>CROs and other external parties</h4>
+                            <button class="btn btn-lg">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container (DEVELOPER) -->
+        <div id="developer" class="container-fluid text-center bg-grey">
+			<h2 class="text-center">DEVELOPER WORKSPACE</h2>
+            <br>
+            <h3>D2 Config is the administration client of Documentum D2. We can use D2 Config to:</h3>
+            <br>
+            <strong>
+				<p>Customize the user interface of D2 Client for end users.</p>
+				<p>Configure automatic processes run by D2.</p>
+				<p>Configure actions available to end users in D2 Client.</p>
+				<p>Configure interaction with external applications such as Documentum Administrator, rendition servers, and Retention Policy Services.</p></strong>
+			<p style="font-size: 17px; line-height: 1.00em; font-weight: 400; margin: 30px 0;">Below are the configuration elements involved to build an application using D2 Config.</p>
+			<div class="row">
+                <div class="col-sm-4">
+					<button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalCMC" aria-labelledby="myModalLabel" aria-hidden="true" style="width:100%;">Configuration Matrix, Contexts and Application</button>
+					<!-- Modal -->
+					<div id="myModalCMC" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg" style="width:80%;">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Configuration Matrix, Contexts and Application</h4>
+								</div>
+								<div class="modal-body">
+									<div role="tabpanel">
+										<ul class="nav nav-tabs" role="tablist" >
+											<li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Matrix</a>
+											</li>
+											<li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Context</a>
+											</li>
+											 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Applications</a>
+											</li>
+											<li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+											</li>
+										</ul>
+										<!-- Tab panes -->
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="matrixTab" style="text-align: left;">
+												<p>The configuration matrix is the user interface that you use to control the application of configuration elements to contexts as shown in the following screenshot:</p>
+												<img src="img/matrix1.png" alt="Configuration Matrix" class="responsive">
+												<br>
+												<p>To use the configuration matrix:</p>
+												<br>
+												<p><strong>Create a configuration component</strong>:<br> Configuration components are the types of configurations, such
+												as autonaming and security. Specific instances of configurations are saved as configuration elements,
+												shown as collapsible rows in the vertical Y-axis of the configuration matrix. For example, you can
+												create a security element for quality assurance draft writers with WRITE access. You can access
+												the element by expanding the Security configuration component.</p><br>
+												<p><strong>Create a context</strong>:<br> Shown as the horizontal X-axis of the configuration matrix. Contexts comprise of
+												logical groupings of content qualified by conditions and composed of properties such as document
+												types, DQL conditions, and user groups. Contexts determine when a configuration element
+												applies to content within the repository. For example, you can create a context that applies for all
+												dm_document content types created for quality documents and set to the Draft status.</p><br>
+												<p><strong>Apply the configuration element to the context</strong><br> For example, applying the configuration element
+												to the context created in the first two examples leads to a configuration such that the Draft
+												dm_document quality assurance content provides quality assurance draft writers WRITE access.</p>
+												<br>
+												<p style="color:Red;">The D2 engine determines which config, that is autolinking, check-in, security, and other such
+												component configurations to use, by scanning all contexts defined in the matrix from left to right. The
+												first context which is matched will result in the D2 engine applying all component configurations
+												associated to the same context from top to bottom.</p>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="contextTab" style="text-align: left;">
+												<br>
+												<p>The Context is the fundamental of any D2 application. You can create either Group based or Type based Contexts or the mixture of both and can pass query based conditions as per your requirements.<br><br>
+													Follow these steps to create a Context:</p>
+												<br><br>
+												<img src="img/Context.png" alt="Context Creation Image" class="responsive" style="min-width: 80%;">
+												<br>
+												<p>1. Navigate to <strong>Go to > Context</strong> from the menu bar.</p>
+												<p>2. Click <strong>New</strong> to create a context.</p>
+												<p>If you want to create a child context that inherits the properties of an existing context, select a context and click Create from.</p>
+												<p>3. Fill out the form as described in the following table:</p>
+												<table style="width:100%">
+													<tr>
+														<th style="text-align: center;">Field</th>
+														<th style="text-align: center;">Description</th>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Type a name to appear in the configuration matrix.</td>
+													</tr>
+													  <tr>
+														<td>Description</td>
+														<td>Type a description.</td>
+													  </tr>
+													<tr>
+														<td>Applications</td>
+														<td>Add or remove the applications to which this context
+														applies. For example, adding the QA application
+														causes the context to only apply to matching quality
+														assurance cases.</td>
+															  </tr>
+													<tr>
+														<td>Parents</td>
+														<td>Add or remove parent contexts for this context to correspond to a context tree.</td>
+													  </tr>
+														<tr>
+														<td>Type</td>
+														<td>Add or remove content types.</td>
+													  </tr>
+														<tr>
+														<td>Condition</td>
+														<td>Type the DQL-query filter.</td>
+													  </tr>
+														<tr>
+														<td>Group</td>
+														<td>Add or remove user groups.
+													The field conjoins groups using the OR statement.</td>
+													  </tr>
+												</table>
+												<p>4. Click Save.</p>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="applicationTab" style="text-align: left;">
+												<br>
+												<p>For any D2 based project you need an application. You can have application referred by one or many configuration elemenets. <br><br>
+													<img src="img/NewApplication1.png" alt="Application Creation Image" class="responsive">
+													<br>
+													Follow these steps to create an Application:</p>
+												<p>1. Navigate to <strong>Tools > Application</strong> from the menu bar.</p>
+												<p>2. Click <strong>New</strong> to create a Application.
+												If you want to create a child Application that inherits the properties of an existing context, select a	context and click <strong>Create from.</strong></p>
+												<p>3. Fill out the form as described in the following table:</p>
+												<table style="width:100%">
+												  <tr>
+													<th>Field</th>
+													<th>Description</th>
+												  </tr>
+												  <tr>
+													<td>Name</td>
+													<td>Type a name for the application</td>
+												  </tr>
+												  <tr>
+													<td>Description</td>
+													<td>Type a description.</td>
+												  </tr>
+													<tr>
+													<td>User/Group names/td>
+													<td>Use the list controls to add and remove users and groups.</td>
+												  </tr>
+													<tr>
+													<td>Permissions</td>
+													<td>Use the list controls to add and remove permissions.
+													<p>
+													If more than one application is applicable to content,
+													end users can only perform actions shared across all
+													applications. For example, Application A grants
+													the permission Can drag and drop context, while
+													Application B grants the permissions Can drag
+													and drop context and Can create, modify, and
+													delete content. The end user can only drag and
+													drop content because both applications grant the
+													permission.</p>
+													</td>
+												  </tr>
+												</table>
+												<p>4. Click Save.</p>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="learningTabCMC" style="text-align: left;">
+												<br>
+												<li>You can create a configuration that inherits the settings of and creates a parent-child relationship with an existing configuration. <br>
+												<li><strong>Type based Context</strong> is created for configuration which acts on <strong>Object Type</strong> like Lifecycle, Workflows, Ssecurity, etc</li>
+												<li><strong>Group based Context</strong> is created for configurations which acts on <strong>Users or Groups</strong> like Widgets, Workspaces, Query Forms, etc</li>
+												<li>You can pass a predicate in the <strong>Condition</strong> field to process this context only if a specific condition is valid. For Example: The predicate on a Type Based Context like <strong>domain = 'domain_name' and primary_group='group_name'</strong> will make this context and all its associated Configurations applied only if the document type has specified domain and primary group</li>
+												<li>If you delete a parent configuration, the child configurations continue to show the deleted configuration as a parent.</li>
+											   <li>Any configuration or Context can be mapped to multiple applications and vice versa</li>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<!-- Trigger the modal with a button of Dictionaries and taxonomies -->
+					<button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalDT" style="width:100%;">Dictionaries and taxonomies</button>
+					<!-- Modal -->
+					<div id="myModalDT" class="modal fade" role="dialog">
+						 <div class="modal-dialog modal-lg" style="width:80%;">
+							 <!-- Modal content-->
+							 <div class="modal-content">
+								 <div class="modal-header">
+									 <button type="button" class="close" data-dismiss="modal">&times;</button>
+									 <h4 class="modal-title">Dictionaries and taxonomies</h4>
+								 </div>
+								 <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#terminologyTab" aria-controls="terminologyTab" role="tab" data-toggle="tab">Dictionary Terminology</a>
+                                </li>
+                                <li role="presentation"><a href="#Taxonomyinfo" aria-controls="Taxonomyinfo" role="tab" data-toggle="tab">Taxonomy Terminology</a>
+                                </li>
+                                 <li role="presentation"><a href="#configureDictTab" aria-controls="configureDictTab" role="tab" data-toggle="tab">Configure Dictionary</a>
+                                </li>
+                                <li role="presentation"><a href="#configureTaxTab" aria-controls="configureTaxTab" role="tab" data-toggle="tab">Configure Taxonomy</a>
+                                </li>
+                                <li role="presentation"><a href="#registeredTable" aria-controls="registeredTable" role="tab" data-toggle="tab">Registered Table</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabDNT" aria-controls="learningTabDNT" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="terminologyTab" style="text-align: left;">
+
+                                    <p><br>A <strong>D2 Dictionary</strong> is a collection of key values and one or more sets of descriptive labels, used to provide value assistance to the end user.</p>
+                                    <p>Dictionaries help end users by defining choice sets for property values, or say metadata for generating autonaming patterns, and providing input assistance during advanced searches. </p>
+                                    <p>The advantages of dictionaries that it increases the likelihood of a property being filled out by an end user. </p>
+                                    <p>Reduce labeling errors such as extraneous spaces, inconsistent plurality, and so on.</p>
+                                    <p>You can use an alias to create an alternate equivalent of the value. For example, you can have the value True and False, and assign as aliases the values Yes and No, 0 and 1 and In Progress. In configuration components such as property page fields, you can designate the dictionary and alias used. You can use the different terms to assist end users. For example, in some cases when an end user accesses a list box, they see the option as True/False. You can use aliases so that in other cases, the end user sees the option Yes and No. Despite the difference, both terms are treated as equivalent values and receive equivalent treatment from automatic processes.</p>
+                                    <img src="img/dictionary1.png" alt="D2 Dictionary Image" class="responsive">
+                                    <br>
+                                    <p>You can use two types of dictionaries:</p>
+                                    <p>â€¢ Static values such as the category of a document, which is a fixed property.</p>
+                                    <p>â€¢ Dynamic values such as property of an author that is accessed using a DQL query for existing users.</p>
+                                    <p>As dictionaries encourage uniform terminology, D2 can then enforce automatic content linking rules
+                                    with more confidence. Dictionaries as a whole improve content management from both a manual and
+                                    automatic perspective. Dictionaries are used in the following configuration components:<p>
+                                    <p>â€¢ Property pages for combo lists, labels, and so on.</p>
+                                    <p>â€¢ Creation profile for type and attribute selection.</p>
+                                    <p>â€¢ Autonaming for alias or languages in naming content.</p>
+                                    <p>â€¢ Autolinking for using Properties labels for content placement.</p>
+                                    <p>â€¢ Search mapping for input assistance during advanced searches.</p>
+                                    <p>â€¢ Column mapping for use of labels and languages.</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Taxonomyinfo" style="text-align: left;">
+                                    <br>
+                                    <p>A <strong>D2 Taxonomy</strong> is a set of values in a tree hierarchy, driven by D2 Dictionaries. Use a Taxonomy if you want to filter values or design a tree of values.<p>
+                                    <p>You can select dictionaries used in a taxonomy,
+                                    then select which values to use and at what level of a hierarchy </p>
+                                    <p>D2 uses taxonomies in the property
+                                    page to allow the display of values available for series of attributes. </p>
+                                    <p>For Example: You can have a dictionary called Countries, which stores list of all the countries and another dictionary called States that stores list of all the states of all the countries and then use these two dictionaries to create a taxonomy which on selection of Country as India will show states related to India, while on selection of USA it will show states related to USA.</p>
+                                    <p>For example, you can define a level of Types, then define subtypes for each type, as shown in the
+                                    following screenshot:</p>
+                                    <br>
+                                    <img src="img/taxonomy1.png" alt="D2 Dictionary Image" class="responsive">
+                                    <br>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="configureDictTab" style="text-align: left;">
+                                    <br>
+                                    <p>To configure the Dictionary. Follow below steps:</p>
+                                    <p>1. Navigate to<strong> Data > Dictionary</strong> from the menu bar.
+                                    <p>2.Select one of the options for creating a dictionary<br>If you want to create a child dictionary that inherits the properties of an existing dictionary, select
+                                    a dictionary and click Create from.</p>
+                                    <p>Click <strong>Restore dictionary</strong><br> to open a specific version of an existing dictionary.</p>
+                                    <p>Click <strong>Import</strong> to import a table as a dictionary.</p>
+                                    <p>You can create an excel as shown below and import this excel:</p> <br>
+                                    <img src="img/dictionary2.png" alt="D2 Dictionary Image" class="responsive">
+                                    <p>3. Fill out the form as described in the following table:</p>
+                                    <table style="width:100%;">
+                                      <tr>
+                                        <th>Field</th>
+                                        <th>Description</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Name</td>
+                                        <td>Type a name for the application</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>Type a description.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Applications/td>
+                                        <td>Add or remove the applications to which this
+                                    dictionary applies. For example, adding the QA
+                                    application would cause the dictionary to only apply
+                                    to matching quality assurance cases.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Versioned dictionary</td>
+                                        <td>Select to use automatic version control for each
+                                    save operation.
+                                        </td>
+                                      </tr>
+                                        <tr>
+                                        <td>Groups > Administration group</td>
+                                        <td>Select a user group to have the ability to administer
+                                    the dictionary using D2 Client.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Groups > Search Dictionary available for the group</td>
+                                        <td>Select a user group to have the ability to search the
+                                    dictionary.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Labels > Label (language>)</td>
+                                        <td>Type a label to appear in the configuration matrix
+                                    and during content creation in D2 Client.</td>
+                                      </tr>
+
+                                        <tr>
+                                        <td>Manual sort</td>
+                                        <td>Select to enable manual ordering of dictionary
+                                    values instead of alphabetizing them.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Create a registered table</td>
+                                        <td>Select to create an external table based on the values contained within the dictionary. D2 creates the table when you save the changes. NoteThe D2 dictionaries share a single database table in the repository. The "Create a registered table" option allows the administrator to define the dictionary in a dedicated registered table.</td>
+                                      </tr>
+                                    </table>
+
+                                    <p><br>4. Select <strong>Data >DQL dictionary</strong> to enable DQL dictionary creation.</p>
+                                    <p>    -a: <strong>DQL dictionary</strong> is displayed as an option only when <strong>Dictionary caching</strong> is selected. If Dictionary caching is not selected for DQL Dictionary then administrators will not be able to select the dictionary under <strong>Interface > Display Configuration</strong> in D2â€“Config.</p>
+                                    <p>    -b: Type the DQL query. The following table describes commands you can use:</p>
+                                    <table style="width:100%">
+                                        <tr>
+                                            <th>Command</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>as name</td>
+                                            <td>Set the preceding attribute as a key attribute</td>
+                                          </tr>
+                                        <tr>
+                                            <td>as is_enabled</td>
+                                            <td>Enable or disable boolean properties.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>as mon_alias</td>
+                                        <td>Create a new matching list for the key.<br>The command is similar to the alias column.</td>
+                                        </tr>
+                                    <tr>
+                                    <td>as label_en/fr</td>
+                                    <td>Translate values
+                                    </td>
+                                  </tr>
+                                    <tr>
+                                    <td>$value()</td>
+                                    <td>Insert into the WHERE statement to refine results</td>
+                                </table>
+                                <p><br>5. Add dictionary values.</p>
+                                <p>If Manual sort was selected, use the up and down arrows to reorder values.
+                                You cannot delete dictionary values used in a creation profile and property page. Unselect Key to
+                                remove it from the dictionary.</p>
+                                <p>6. Add or remove Languages values.</p>
+                                <p>7. Add or remove Alias values.</p>
+                                <p>8. To save the dictionary:<br>
+                                        â€¢ Click Save to use automatic versioning.<br>
+                                        â€¢ Click Save dictionary to manually version the dictionary.<br>
+                                        â€¢ Click Export to export the dictionary in a file format you want.</p>
+                                <p>9. Click Update repository to load the changes in the repository without restarting the server.</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="configureTaxTab" style="text-align: left;">
+                                    <br>
+                                    <p>To configure the Taxonomy. Follow below steps:</p>
+                                    <br>
+                                    <p>1. Navigate to<strong>Data > Taxonomy</strong> from the menu bar.</p>
+                                    <p>2.Select one of the options for creating a taxonomy<br>If you want to create a child taxonomy that inherits the properties of an existing taxonomy, select a taxonomy and click Create from.</p>
+                                    <p>Click <strong>Restore taxonomy</strong><br> to open a specific version of an existing taxonomy.</p>
+                                    <p>Click <strong>Import</strong> to import a table as a taxonomy.</p>
+                                    <p>You can create an excel as shown below and import this excel:</p> <br>
+                                    <img src="img/taxonomy2.png" alt="D2 Taxonomy Image" class="responsive">
+                                    <p>3. Fill out the form as described in the following table:</p>
+                                    <table style="width:100%;">
+                                      <tr>
+                                        <th>Field</th>
+                                        <th>Description</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Name</td>
+                                        <td>Type a name for the application</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>Type a description.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Applications/td>
+                                        <td>Add or remove the applications to which this
+                                    dictionary applies. For example, adding the QA
+                                    application would cause the dictionary to only apply
+                                    to matching quality assurance cases.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Administration group</td>
+                                        <td>Select a user group to have administration rights.
+                                        </td>
+                                      </tr>
+                                        <tr>
+                                        <td>Versioned taxonomy</td>
+                                        <td>Select to enable automatic version control of the taxonomy
+										</td>
+                                      </tr>
+                                    </table>
+                                    <p>4. Add or remove dictionaries used in the taxonomy. You can only remove the lowest level in the list. </p>
+                                    <p>5. Use the list controls to add or remove taxonomy values.</p>
+                                    <p>6. To save the taxonomy:<br>
+                                        â€¢ Click Save to use automatic versioning.<br>
+                                        â€¢ Click Save taxonomy to manually version the taxonomy.<br>
+                                        â€¢ Click Export to export the taxonomy in a file format you want.</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="registeredTable" style="text-align: left;">
+                                    <p><br>Registered tables are relational database management system tables that are not part of the repository but are known to the Content Server. You can use registered tables as read-only dictionaries. You can import:</p>
+                                    <p>   â€¢ Exported dictionaries.</p>
+                                    <p>   â€¢ Imported .csv or .xsl files. This option can be used only on an existing registered table to edit
+                                        its values.</p>
+                                    <p>Use registered tables as a reference</p>
+                                    <p>1. Navigate to <strong>Data > Registered table</strong> from the menu bar.</p>
+                                    <p>2. Select one of the options for showing or editing a registered table. New does not create a registered table, you must create registered tables in Documentum Administrator or through a dictionary.<br>If you want to create a child registered table that inherits the properties of an existing registered table, select a registered table and click Create from.</p>
+                                    <p>3. Fill out the form as described in the following table:</p>
+                                    <table style="width:100%;">
+                                      <tr>
+                                        <th>Field</th>
+                                        <th>Description</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Name</td>
+                                        <td>Select a registered table in the repository</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>Type a description.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Applications/td>
+                                        <td>Add or remove the applications to which this registered table applies. For example, adding the QA application would cause the registered table to only apply to matching quality assurance cases.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Administration group</td>
+                                        <td>Select a user group to have administration rights.
+                                        </td>
+                                      </table>
+                                    <br>
+                                    <p>4. Add or remove table values.<br>Add a row by typing values into the empty row at the bottom of the table. </p>
+                                    <p>5. To save the registered table:<br>
+                                            â€¢ Click Save to save the registered table.<br>
+                                            â€¢ Click Export to export the registered table in a file format you want.</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="learningTabDNT" style="text-align: left;">
+                                    <p><br>â€¢ The Dictionaries and Taxonomies play a very <strong>important</strong> role in <strong>D2 Configurations.</strong></p>
+                                    <p>â€¢ The Creation Profile which is used for creation of Documents make use of Dictionaries.</p>
+                                    <p>â€¢ The User security can also be defined using <strong>Aliases</strong> in Dictionaries</p>
+                                    <p>â€¢ The wf_process_list attribute which is responsible for workflows on document also makes use of Taxonomy in Out of the Box D2 for Lifesciences Application</p>
+                                    <p>â€¢ DQL Dictionary and registered table also play a vital role for displaying values in the Drop Downs and List type of fields in Property Pages</p>
+                                    <p>â€¢ The Key-Value pair of dictionary can display values on front end and stores Keys on back end</p>
+                                    <p>â€¢ Making changes into Dictionaries may sometime not reflect immedietly on front end, in that cache you have to call <strong>Refresh Cache</strong> option from D2 Config, or Restart the App Server</p>
+                                    <p><i>     You can also try this URL to refresh Cache:<br>     http://[App Server]/D2/servlet/RefreshCache?_docbase=[doc base name]&_username=[system installation owner name]&_password=[password]</i></p>
+                                    <p>â€¢ The Dictionary and taxonomy is also used by Search Configuration and Display Configuration of D2 Config.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+								 <div class="modal-footer">
+									 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								 </div>
+							 </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+              <!-- Trigger the modal with a button of Content Creation Components -->
+            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalCC" style="width:100%;">Content Creation Components</button>
+            <!-- Modal -->
+            <div id="myModalCC" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg" style="width:80%;">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Content Creation Components</h4>
+                    </div>
+                     <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#Autonaming" aria-controls="Autonaming" role="tab" data-toggle="tab">Autonaming</a>
+                                </li>
+                                <li role="presentation"><a href="#propertyTab" aria-controls="propertyTab" role="tab" data-toggle="tab">Property Page</a>
+                                </li>
+                                 <li role="presentation"><a href="#Inheritance" aria-controls="Inheritance" role="tab" data-toggle="tab">Inheritance</a>
+                                </li>
+                                <li role="presentation"><a href="#Security" aria-controls="Security" role="tab" data-toggle="tab">Security</a>
+                                </li>
+                                 <li role="presentation"><a href="#linkingTab" aria-controls="linkingTab" role="tab" data-toggle="tab">Auto Link</a>
+                                </li>
+                                 <li role="presentation"><a href="#Template" aria-controls="Template" role="tab" data-toggle="tab">Template Lists</a>
+                                </li>
+                                <li role="presentation"><a href="#Checkin" aria-controls="Checkin" role="tab" data-toggle="tab">Checkin</a>
+                                </li>
+                                  <li role="presentation"><a href="#Uniqueness" aria-controls="Uniqueness" role="tab" data-toggle="tab">Uniqueness Check</a>
+                                </li>
+                                 <li role="presentation"><a href="#Mass" aria-controls="Mass" role="tab" data-toggle="tab">Mass Update</a>
+                                </li>
+
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Autonaming" style="text-align: left;">
+                                    <br>
+                                    <p><br>Suppose if you want that whenever a document is created, few of the attributes like <strong>Object Name</strong> gets a name automatically like <i>DOC-123, DOC-124 and so on</i>, or say, another attribute called <strong>Title</strong> always have <i>(DO NOT USE)</i> appended at the end of it, to achieve this, we need to configure an Autonaming Configuration. </p>
+                                        <p>To configure the Autonaming. Follow below steps:</p>
+
+                                    <p>1. Navigate to<strong>Go to > Auto naming</strong> from the menu bar.
+                                    <p>2.Click New to create an autonaming rule.<br>
+									If you want to create a child autonaming rule that inherits the properties of an existing autonaming rule, select an autonaming rule and click Create from.</p>
+                                    <p>3. Fill out the form as described in the following table:</p>
+                                    <table style="width:100%;">
+                                      <tr>
+                                        <th>Field</th>
+                                        <th>Description</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Name</td>
+                                        <td>Type a name to appear in the configuration matrix</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Description</td>
+                                        <td>Type a description.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Applications/td>
+                                        <td>Add or remove the applications to which this autonaming rule applies. For example, adding the QA application would cause the autonaming rule to only apply to matching quality assurance cases.</td>
+                                      </tr>
+                                        <tr>
+                                        <td>Generate the document name for each property modification</td>
+                                        <td>Select to have the document name updated whenever a save operation is performed on properties used by the autonaming rule.
+                                        </td>
+									  </tr>
+									  <tr>
+                                        <td>Regenerate on new version</td>
+                                        <td>Select to have the document name updated whenever a new version of the content is created.
+                                        </td>
+									  </tr>
+									  <tr>
+                                        <td>Property name</td>
+                                        <td>Select the property changed.
+                                        </td>
+									  </tr>
+                                      </table>
+
+									<p><br>4. To add a property to the Auto naming template </p>
+									<p>a- Select a property from the Properties list box in the Naming menu bar.<br>
+									   b- Select a dictionary if the property uses a dictionary. Select a language or alias.<br>
+										c- Type the index position of the value if the property is a repeating property and you want to select a specific value.<br>For example, if you want to select the first value of the list, type 0.<br>
+										d- Type the date format if the property is a date property, select a DQL action, and enter the value.
+                                        Use the following table to understand what values to type for each DQL action:</p>
+										<table>
+										 <tr>
+                                        <th>DQL Action</th>
+                                        <th>Value</th>
+                                      </tr>
+										<tr>
+                                        <td>DATEADD</td>
+                                        <td>year|month|week|day followed by an integer value
+                                        </td>
+									  </tr>
+									  <tr>
+                                        <td>DATEFLOOR</td>
+                                        <td>year|month|week|day
+                                        </td>
+									  </tr>
+                                      </table>
+                                    <p>5. Select the position in the autonaming template, then type text to insert static text.</p>
+                                    <p>6. To configure the counter:<br>
+                                        a. Type the initial counter value in Counter value.<br>
+                                        b. Select Counter depends on template properties to count subtype changes. When not selected, changes to content subtype do not increase the counter.<br>
+                                        c. Fill the form as follows:</p>
+
+                                        <table>
+                                            <tr>
+                                                <th>Field</th>
+                                                <th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Send email notification to</td>
+                                                <td>Type the email address to which D2 sends a notification.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>when the number of remaining values is</td>
+                                                <td>Type a counter value. When the number of remaining values reaches this number, D2 sends a notification to the previously entered email address alerting the recipient
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Interval start value</td>
+                                                <td>Type the starting value.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Interval end value</td>
+                                                <td>Type the end value.</td>
+                                            </tr>
+                                        </table>
+									<p>d. Click + to add another interval of counter values. When one interval ends, D2 continues the counter from the next sequential interval start value.</p>
+									<p>Click + to add a <strong>regular expression</strong>, For example, having <i>underscore, _, - respectively replaces all _ with -</i>. This can be done by adding a Regular Expression.<br>Use the up and down arrows to reorder the regular expressions. Regular expressions are executed from top to bottom.</p>
+									<p>8. Select <strong>Do not apply for: Cross repository copy/paste</strong> to disable the auto naming for cross repository copy and paste operations.</p>
+									<p>9. Click Save.</p>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="propertyTab" style="text-align: left;">
+                                    <br>
+									<p><strong>Property Page</strong> are like forms where user inputs values to corresponding field and these attributes get set to the associated Object type.<br>Property Page is used at time of <strong>Creation, Editing or Importing a document.</strong> They are also used by <strong>Query Forms and in Workflows and Lifecycles,</strong> etc</p>
+									<p>You can create and configure property pages to determine the properties that end users can view and edit.</p>
+									<p>If you do not spec ify a properties page in a creation profile, the D2 Client content creation wizard skips the properties step. </p>
+									<p>If you remove attributes from an object type using other applications such as Composer or Documentum Administrator, D2 shows the property pages with blank spaces.You must manually update the property pages to remove the deleted properties.</p>
+									<p>An end user creates a quality assurance Draft document. You can configure a property page to show a comment field and a checkbox for whether it is a private or public draft. This allows end users to view and add comments to the document and set its privacy status. End users cannot view or make changes to all other properties such as the document title, author, and status.</p>
+									<p>Property Page handles various rules, like if you want a set of attributes available only when the status is <strong>Draft</strong> and these attributes to remain hidden for all other statuses of document, this can be achieved easily with Property Page Coonfiguration</p>
+									<br>
+									<p>To Configure a Property Page, Navigate to <strong>Go To>Property Page</strong></p>
+									<p>Click <strong>New</strong> or select <strong>Create From</strong> if you want to create from an existing Property Page</p>
+									<p>Fill out the fields like <strong>Name, Description, App;ications</strong></p>
+									<p>From the drop down in <strong>Document Type</strong> field, select the object type. <i>On basis of your selection of Object type the attributes will be displayed to configure a property page.</i></p>
+									<p>You can Configure Electronic signature options by selecting <strong>Electronic signature required (in edition mode)</strong> checkbox.<br><i>This will enable a functionality in which whenever a user saves a Property Page while Editing, he/she have to provide an e-signature which will be audited.</i></p>
+									<p>If ESignature is enabled, then you can also select <strong>Intention required</strong> check box and provide an intention dictionary reference in the <strong>Intentions dictionary</strong> field which enable users to select a reason from a list of options.</p>
+									<p>You can configure the dialogue box size of the Property Page by setting <strong>Height, Width, Resizable, Button position</strong> options.</p>
+									<p>To Configure Structure of the property page.</p>
+									Add organizational objects to the property page. Use the following table to determine which sorganizational objects to add:
+
+									 <img src="img/PropertyPage1.png" alt="D2 Property Page Elements" class="responsive">
+									<p>You can preview the property page by clicking the Display preview in create mode, Display preview in edit mode, and Display preview in import mode buttons. The buttons show a dialog box with the selected property page form, allowing you to check your work. Permission configured for each property are active for the preview. If you do not belong to the correct groups, certain properties may not appear when previewing properties.</p>
+									<p>Below are the Property Page elements</p>
+									<table>
+										<th>Element Name</th>
+										<th>Description</th>
+										<tr>
+											<td>Label</td>
+											<td>Adds as static text- the property name, a colon, and the value of the property. For Example <i>Status: Draft</i></td>
+										</tr>
+										<tr>
+											<td>Text</td>
+											<td>Adds a text field for end users to type values into and save. For Example: <i>Title: [User Inout value in the box]</i></td>
+										</tr>
+										<tr>
+											<td>Password</td>
+											<td>Adds a text field for end users to type a password into for saving. D2 displays the password during auditing and when producing info dumps, so make sure end users account for the risk of password exposure.</td>
+										</tr>
+										<tr>
+											<td>Memo</td>
+											<td>Adds a text box for end users to type a memo into and save.</td>
+										</tr>
+										<tr>
+											<td>Rich text editor</td>
+											<td>Adds a rich text editor for users to format the content or value of a property.</td>
+										</tr>
+										<tr>
+											<td>Boolean</td>
+											<td>Adds a checkbox that returns a boolean value.</td>
+										</tr>
+										<tr>
+											<td>Date</td>
+											<td>Adds a date field for end users to select a date from a calendar. D2 uses the server date and time to register the selected date and can show an error when you click Save if the dates do not match due to timezone differences.</td>
+										</tr>
+										<tr>
+											<td>URL hyperlink</td>
+											<td>Adds a list field for end users to add, remove, reorder, and access external links.</td>
+										</tr>
+
+									</table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Inheritance" style="text-align: left;">
+									<br>
+                                    <ol>
+										<li>Navigate to <b>Go to > Inheritance</b> from the menu bar.</li>
+										<li>Click <b>New</b> to create an inheritance rule.</li>
+										<li>Fill out the form as described in the following table:
+											<div class="table-responsive">
+												<table style="width:80%;">
+													<tr>
+													  <th style="text-align:center">Field</th>
+													  <th style="text-align:center">Description</th>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Type a name to appear in the configuration matrix</td>
+													</tr>
+													<tr>
+														<td>Description</td>
+														<td>Type a description.</td>
+													</tr>
+													<tr>
+														<td>Applications</td>
+														<td>Add or remove the applications to which this inheritance rule applies</td>
+													</tr>
+
+												</table>
+											</div>
+										</li>
+										<li>Use the list controls to add and remove inherited properties</li>
+										<li>Select the relation type used during inheritance. The following table describes the differences.
+											<div class="table-responsive">
+												<table style="width:80%;">
+													<tr>
+													  <th style="text-align:center">Relation type</th>
+													  <th style="text-align:center">Description</th>
+													</tr>
+													<tr>
+														<td>Default</td>
+														<td>Use the COPY_OF relation.</td>
+													</tr>
+													<tr>
+														<td>None</td>
+														<td>No relation used.</td>
+													</tr>
+													<tr>
+														<td>Other relation</td>
+														<td>Select a defined relation type from the list box.</td>
+													</tr>
+												</table>
+											</div>
+										</li>
+										<li>If you want to prevent inheritance of Virtual Document structure.
+											<ul>
+												<li>Type the inheritance prevention condition for each Virtual Document component in <b>Testing condition on each component</b></li>
+												<li>Type a warning message in <b>Warning message</b>. The message is shown in D2 Client when inheritance is performed</li>
+											</ul>
+										</li>
+										<li>Click <b>Save.</b></li>
+									</ol>
+									<p><br><b>Inheritance</b> becomes useful when a user is creating a Document and want a configururation which allows an automatic process to copy properties from existing content to new content. For Example, Keywords, Applicable Areas, etc</p>
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Security" style="text-align: left;">
+									<p><br>You can <b>configure security models</b>, which define <b>dynamic access control lists (ACLs)</b> that apply to <b>contexts</b>. You can specify a <b>condition</b> based on three identifiers to apply a level of permissions. The three types of identifiers are <b>specific users, user groups, and content properties</b>. <i>If multiple conditions match a specific situation, the most extensive set of rights is applied.</i></p>
+									<ol>
+										<li>Navigate to <b>Go to > Security</b> from the menu bar.</li>
+										<li>Click <b>New</b> to create a security model.</li>
+										<li>Fill out the form as described in the following table:
+											<div class="table-responsive">
+												<table style="width:80%;">
+													<tr>
+													  <th style="text-align:center">Field</th>
+													  <th style="text-align:center">Description</th>
+													</tr>
+													<tr>
+														<td>Name</td>
+														<td>Type a name to appear in the configuration matrix.</td>
+													</tr>
+													<tr>
+														<td>Description</td>
+														<td>Type a description.</td>
+													</tr>
+													<tr>
+														<td>Applications</td>
+														<td>Add or remove the applications to which this security model applies</td>
+													</tr>
+												</table>
+											</div>
+
+										</li>
+										<li>Configure levels of permissions:
+											<ol>
+												<li>Use list controls to add, remove, and reorder permission levels.</li>
+												<li>For each level, select an <b>Identifier</b> from one of the three list boxes:</li>
+												<ol>
+													<li>User</li>
+													<li>Group</li>
+													<li>Property</li>
+												</ol>
+												<p>You can merge text and property context using the following keywords:</p>
+												<div class="table-responsive">
+												<table style="width:80%;">
+													<tr>
+													  <th style="text-align:center">Keyword</th>
+													  <th style="text-align:center">Description</th>
+													</tr>
+													<tr>
+														<td>$dqlvalue(â€™&lt;dql request&gt;â€™)</td>
+														<td>Perform a DQL request. You must include the quotation marks.</td>
+													</tr>
+													<tr>
+														<td>$value(&lt;property&gt;)$value(&lt;property&gt;)</td>
+														<td>Merge two properties, for example $value(country)$value(state)</td>
+													</tr>
+
+												</table>
+											</div>
+												<p style="color:RED">Note: The recommended way to manage the security configuration is via properties associated with the object in question. Using a complex DQL query may not result in expected behavior when D2 is not able to compute the ACL accordingly due to the DQL complexity.</p>
+												<li>Use list controls to add, remove, and reorder conditions. You cannot remove the defaultcondition.<br>Conditions relate a property list box to an expression. D2 prioritizes the matching of the conditions from top to bottom.</li>
+												<li>Toggle permissions by double-clicking on the cells as described in the following table:
+																							<div class="table-responsive">
+												<table style="width:80%;">
+													<tr>
+													  <th style="text-align:center">Right</th>
+													  <th style="text-align:center">Description</th>
+													</tr>
+													<tr>
+														<td>Change State</td>
+														<td>Users can change the state of content that has been applied a lifecycle.</td>
+													</tr>
+													<tr>
+														<td>Change Owner</td>
+														<td>Users can change the owner of content. If the user is not the content owner or a superuser, they must also have Write permission.</td>
+													</tr>
+													<tr>
+														<td>Change Permit</td>
+														<td>Users can change the basic permissions of content</td>
+													</tr>
+													<tr>
+														<td>Delete Object</td>
+														<td>Users can only delete the object. Grant the permission if you want to allow a user to delete without being able to read the content.</td>
+													</tr>
+													<tr>
+														<td>Change Folder Links</td>
+														<td>Users can create or remove links to a folder. Grant the permission if you want to allow a user to move content into a folder without having permissions to read or write within the folder.</td>
+													</tr>
+													<tr>
+														<td>Change Location</td>
+														<td>Users can move content within the repository. The user must also have Write permission to move content and Browse permission to link content. Users require Delete and Change Location permission to delete a link.</td>
+													</tr>
+													<tr>
+														<td>Execute Proc</td>
+														<td>Users can run external procedures stored in the repository as a dm_procedure on certain object types.</td>
+													</tr>
+												</table>
+											</div>
+												</li>
+											</ol>
+										</li>
+										<li>Click <b>Save.</b></li>
+										</ol>
+									<h4>Understanding Minimum Security Rights</h4>
+
+									<p>By default, the <b>admingroup</b> group or the <b>Documentum System administratorâ€™s group</b> is created during <b>D2 installation</b> or upgrade and contains all <b>Superusers</b> in the repository. 				<br>When you grant <b>Superuser</b> privileges to a user, you may also need to add that user to the <b>admingroup</b> group to enable them to <b>run jobs or administration methods.</b> Users belonging to the admingroup group have no inherent privileges other than those they have as Superusers. However, administrative jobs, methods, and other related objects use an ACL which restricts their use to the <b>admingroup</b> group.<br>If you <b>revoke Superuser</b> privileges from a user, the user should also be removed from the admingroup group.</p> <p style="color:RED">Note: Do not delete the admingroup group from the repository. The admingroup group, which includes all Superusers within the repository, is used by the jobs that make up the administration tool suite.</p>
+									<h4>Editing a Security Model</h4>
+									<p>This is the trickiest thing that you do on the D2 environment. Updating the Security model affects the newly created document as well as the previously created documents</p>
+									<ol>
+										<li>To modify a security model and affect existing content, modify the security model and do not modify the configuration matrix.<br> D2 runs a job in the background to modify the ACL of all previously created content using the scurity model.</li>
+										<li>To modify a security model and avoid affecting existing content, unless you perform a manual operation:
+											<ul>
+												<li>Create a copy of the security model.</li>
+												<li>In the configuration matrix, unselect the previous security model and select the new security model.</li>
+											</ul>
+											<br>D2 applies the security model to new content and to existing content when it is saved, checked in,or has a property changed.
+										</li>
+										<li>To modify a security model and avoid affecting existing content:
+											<ol>
+												<li>Create a copy of the security model.</li>
+												<li>Create a copy of the content context used for the previous security model. Add the condition r_creation_date &gt; &lt;the date of creation for the new security model&gt;to identify the content created for the new security model.</li>
+												<li>Drag the new context before the old context in the configuration matrix.</li>
+												<li>Activate the new context.</li>
+												<p>D2 applies the new model to all new content, and old content continues using the old security model. You can launch <b>D2 Core Job</b> using <b>Documentum Administrator</b> or run a mass update to apply the new security model to linked content through a
+													<a type="button" class="btn btn-sm" data-toggle="collapse" data-target="#corejob">D2 Core Job DQL</a>
+													<span id="corejob" class="collapse"><br><b><i>EXECUTE do_method WITH METHOD='D2CoreMethod', ARGUMENTS='-docbase_name &lt;docbase name&gt; -user &lt;user_name&gt; -password &lt;password&gt; -dql_filter "select r_object_id from cd_quality_gmp where object_name = ''&lt;object_name&gt;''" -security true -create true -naming true -linking true' </i></b>
+													</span>
+												</p>
+											</ol>
+										</li>
+									</ol>
+									<p>The following scrrenshot explains the Security Configuration in D2 Config:</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="linkingTab" style="text-align: left;">
+									<br>
+                                    <ol>
+										<li>Navigate to <b>Go to > Auto link</b> from the menu bar.</li>
+										<li>Click <b>New</b> to create an auto linking template.</li>
+									</ol>
+
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Template" style="text-align: left;">
+                                    <p>Template</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Checkin" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Uniqueness" style="text-align: left;">
+                                    <br>
+                                    <p>Uniqueness</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Mass" style="text-align: left;">
+                                    <p>Mass</p>
+                                </div>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+			</div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+              <!-- Trigger the modal with a button of Creation Profiles and DVT -->
+            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalCCD" style="width:100%;">Creation Profiles and Default Value Templates</button>
+            <!-- Modal -->
+            <div id="myModalCCD" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Creation Profiles and Default Value Templates</h4>
+                    </div>
+                     <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="col-sm-4">
+              <!-- Trigger the modal with a button of Lifecycle and Workflows -->
+            <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalLW" style="width:100%;">Lifecycle and Workflows</button>
+            <!-- Modal -->
+            <div id="myModalLW" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Lifecycle and Workflows</h4>
+                    </div>
+                     <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Searches and Query Forms -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalSQF" style="width:100%;">Searches and Query Forms</button>
+                    <!-- Modal -->
+                    <div id="myModalSQF" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Search and Query Forms</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Mailing List, Email and Subscription -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalMES" style="width:100%;">Mailing List, Email and Subscription</button>
+                    <!-- Modal -->
+                    <div id="myModalMES" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Mailing List, Email and Subscription</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Relations, D2 Options and Delegation -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalRDD" style="width:100%;">Relations, D2 Options and Delegation</button>
+                    <!-- Modal -->
+                    <div id="myModalRDD" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Relations, D2 Options and Delegation</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Audit -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalAu" style="width:100%;">Audit</button>
+                    <!-- Modal -->
+                    <div id="myModalAu" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Audit</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Configuration of D2 Client -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalD2" style="width:100%;">Configuration of D2 Client</button>
+                    <!-- Modal -->
+                    <div id="myModalD2" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Configuration of D2 Client</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Specifications -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalSpec" style="width:100%;">Specifications</button>
+                    <!-- Modal -->
+                    <div id="myModalSpec" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Specifications</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Export, Import and Reset D2 Config -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalEIR" style="width:100%;">Export, Import and Reset D2 Config</button>
+                    <!-- Modal -->
+                    <div id="myModalEIR" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Export, Import and Reset D2 Config</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Configuring C2 -->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalC2" style="width:100%;">Configuring C2 </button>
+                    <!-- Modal -->
+                    <div id="myModalC2" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Configuring C2</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Configuring O2-->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalO2" style="width:100%;">Configuring O2</button>
+                    <!-- Modal -->
+                    <div id="myModalO2" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Configuring O2</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Using D2-Bin-->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalBin" style="width:100%;">Using D2-Bin</button>
+                    <!-- Modal -->
+                    <div id="myModalBin" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Using D2-Bin</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+			<div class="row">
+			<div class="col-sm-4">
+				<!-- Trigger the modal with a button of Optimizing D2-->
+				<button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalOPT" style="width:100%;">Optimizing D2</button><!-- Modal -->
+                    <div id="myModalOPT" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Optimizing D2</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Widgets-->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalWidgets" style="width:100%;">Widgets</button>
+                    <!-- Modal -->
+                    <div id="myModalWidgets" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Widgets</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Trigger the modal with a button of Jobs-->
+                    <button type="button" class="btn btn-md" data-toggle="modal" data-target="#myModalJobs" style="width:100%;">Jobs</button>
+                    <!-- Modal -->
+                    <div id="myModalJobs" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Jobs</h4>
+                            </div>
+                             <div class="modal-body">
+                        <!--<p>Some text in the modal.</p>-->
+                        <div role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist" >
+                                <li role="presentation" class="active"><a href="#matrixTab" aria-controls="matrixTab" role="tab" data-toggle="tab">Tab1</a>
+                                </li>
+                                <li role="presentation"><a href="#contextTab" aria-controls="contextTab" role="tab" data-toggle="tab">Tab2</a>
+                                </li>
+                                 <li role="presentation"><a href="#applicationTab" aria-controls="applicationTab" role="tab" data-toggle="tab">Tab3</a>
+                                </li>
+                                <li role="presentation"><a href="#learningTabCMC" aria-controls="learningTabCMC" role="tab" data-toggle="tab">Notes</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="Tab1" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab2" style="text-align: left;">
+                                    <br>
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="Tab3" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="TabNote" style="text-align: left;">
+                                    <p>Some Text</p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!-- Container (EXPERIENCE) -->
+		<div id="experience" class="container-fluid">
+    <h2 class="text-center">EXPERIENCE</h2>
+        </div>
+
+
+
+        <!-- Container (Contact Section) -->
+        <div id= "contact" class="container-fluid">
+          <h2 class="text-center">Contact Us</h2>
+          <p class="text-center"><em>If you have any query or suggetion </em></p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <p>Questions/Suggestions? Drop your Query.</p>
+              <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 903 953 1884</p>
+              <p><span class="glyphicon glyphicon-envelope"></span>Email: prkarya07@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="id" name="id" placeholder="Emplyee ID" type="text" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="query" name="Query" placeholder="Enter your Query here" rows="5"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right" type="submit">Send</button>
+                </div>
+				</div>
+			  </div>
+			</div>
+			</div>
+		<script>
+				$(document).ready(function(){
+					// Add smooth scrolling to all links in navbar + footer link
+					$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+						// Make sure this.hash has a value before overriding default behavior
+						if (this.hash !== "") {
+							// Prevent default anchor click behavior
+							event.preventDefault();
+							// Store hash
+							var hash = this.hash;
+							// Using jQuery's animate() method to add smooth page scroll
+							  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+							  $('html, body').animate({
+								scrollTop: $(hash).offset().top
+							  }, 900, function(){
+								  // Add hash (#) to URL when done scrolling (default click behavior)
+								  window.location.hash = hash;
+							  });
+						} // End if
+					});
+					$(window).scroll(function() {
+						$(".slideanim").each(function(){
+							var pos = $(this).offset().top;
+							var winTop = $(window).scrollTop();
+							if (pos < winTop + 600) {
+								$(this).addClass("slide");
+							}
+						});
+					});
+				})
+		</script>
+		<script>
+			function copyToClipboard(element) {
+					var $temp = $("<input>");
+					$("body").append($temp);
+					$temp.val($(element).text()).select();
+					document.execCommand("copy");
+					$temp.remove();	}
+		</script>
+		<script>
+				// Get the modal
+				var modal = document.getElementById('id01');// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+		</script>
+		<script>
+			// Show div html based on role
+if (HelpCenter.user.role=="anonymous"){
+ $("div.anonymous").show();
+}
+
+if (HelpCenter.user.role=="end_user"){
+ $("div.end_user").show();
+}
+
+if (HelpCenter.user.role=="agent"){
+ $("div.agent").show();
+}
+
+if (HelpCenter.user.role=="manager"){
+ $("div.manager").show();
+}
+
+
+		</script>
+	</body>
+
+
+</body>
+</html>
